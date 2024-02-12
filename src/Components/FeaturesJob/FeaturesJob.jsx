@@ -24,7 +24,7 @@ const FeaturesJob = () => {
 
                 <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-20 rounded">
                     {
-                        jobs.map(job => <Job key={job.id} job={job}></Job>)
+                        jobs.slice(0, 4).map(job => <Job key={job.id} job={job}></Job>)
                     }
                 </div>
             </section>
