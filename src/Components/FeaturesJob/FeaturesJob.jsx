@@ -5,6 +5,7 @@ import Job from "./Job";
 const FeaturesJob = () => {
 
     const [jobs, setJobs] = useState([]);
+    const [dataLength, setDataLength] = useState(4);
 
     useEffect(() => {
         axios.get('jobs.json')
@@ -24,8 +25,12 @@ const FeaturesJob = () => {
 
                 <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-20 rounded">
                     {
-                        jobs.slice(0, 4).map(job => <Job key={job.id} job={job}></Job>)
+                        jobs.slice(0, dataLength).map(job => <Job key={job.id} job={job}></Job>)
                     }
+                </div>
+
+                <div className="flex justify-center items-center mt-10">
+                    <button onClick={() => setDataLength(dataLength + 4)} className="btn  bg-purple-500 text-white">Seel All Job</button>
                 </div>
             </section>
 
