@@ -8,8 +8,8 @@ const Category = () => {
                 <p className="text-xl font-normal text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, alias.</p>
             </div>
 
-            <section className="flex justify-between items-center py-10">
-                <div className="border shadow shadow-gray-500 p-5 w-[200px] space-y-3">
+            <section className="md:flex md:flex-row md:justify-between flex-col items-center py-10 gap-10">
+                <div className="border shadow shadow-gray-500 p-5 w-[200px] space-y-3 h-[170px]">
                     <div>
                         <img src="https://github.com/ProgrammingHero1/career-hub/blob/main/assets/icons/accounts.png?raw=true" alt="" />
                     </div>
@@ -19,7 +19,7 @@ const Category = () => {
                     </div>
                 </div>
 
-                <div className="border shadow shadow-gray-500 p-5 w-[200px] space-y-3">
+                <div className="border shadow shadow-gray-500 p-5 w-[200px] space-y-3 h-[170px]">
                     <div>
                         <img src="https://github.com/ProgrammingHero1/career-hub/blob/main/assets/icons/creative.png?raw=true" alt="" />
                     </div>
@@ -29,7 +29,7 @@ const Category = () => {
                     </div>
                 </div>
 
-                <div className="border shadow shadow-gray-500 p-5 w-[200px] space-y-3">
+                <div className="border shadow shadow-gray-500 p-5 w-[200px] space-y-3 h-[170px]">
                     <div>
                         <img src="https://github.com/ProgrammingHero1/career-hub/blob/main/assets/icons/marketing.png?raw=true" alt="" />
                     </div>
@@ -39,7 +39,7 @@ const Category = () => {
                     </div>
                 </div>
 
-                <div className="border shadow shadow-gray-500 p-5 w-[200px] space-y-3">
+                <div className="border shadow shadow-gray-500 p-5 w-[200px] space-y-3 h-[170px]">
                     <div>
                         <img src="https://github.com/ProgrammingHero1/career-hub/blob/main/assets/icons/chip.png?raw=true" alt="" />
                     </div>
