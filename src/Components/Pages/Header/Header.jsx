@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -11,9 +11,10 @@ const Header = () => {
 
                 <nav>
                     <ul className="flex justify-center items-center gap-10 text-xl font-semibold text-gray-500">
-                        <li><NavLink>Statistic</NavLink></li>
-                        <li><NavLink>Applied Jobs</NavLink></li>
-                        <li><NavLink>Blog</NavLink></li>
+                        <li><NavLink to={"/"}>Home</NavLink></li>
+                        <li><NavLink to={"/statistics"}>Statistics</NavLink></li>
+                        <li><NavLink to={"/appliedJobs"}>Applied Jobs</NavLink></li>
+                        <li><NavLink to={"/blog"}>Blog</NavLink></li>
                     </ul>
                 </nav>
 
