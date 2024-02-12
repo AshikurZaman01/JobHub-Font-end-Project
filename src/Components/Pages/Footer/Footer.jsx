@@ -5,7 +5,7 @@ const Footer = () => {
         <div className="bg-slate-950 text-white">
             <footer>
 
-                <div className=' w-10/12 mx-auto py-10 md:grid md:grid-cols-6'>
+                <div className='w-10/12 mx-auto py-10 md:grid md:grid-cols-6'>
                     <div className="col-span-2 pr-16">
                         <section>
                             <h1 className="text-3xl font-semibold mb-4">CareerHub</h1>

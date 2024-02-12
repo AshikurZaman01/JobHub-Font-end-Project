@@ -1,8 +1,11 @@
+import Category from "../Category/Category";
 
 const Home = () => {
     return (
         <div>
-            this is home
+            <div className="w-10/12 mx-auto">
+                <Category></Category>
+            </div>
         </div>
     );
 };
