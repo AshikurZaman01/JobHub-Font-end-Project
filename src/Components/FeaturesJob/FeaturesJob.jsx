@@ -29,8 +29,8 @@ const FeaturesJob = () => {
                     }
                 </div>
 
-                <div className="flex justify-center items-center mt-10">
-                    <button onClick={() => setDataLength(dataLength + 4)} className="btn  bg-purple-500 text-white">Seel All Job</button>
+                <div className={`flex justify-center items-center mt-10 ${dataLength === jobs.length && "hidden"}`}>
+                    <button onClick={() => setDataLength(jobs.length)} className="btn  bg-purple-500 text-white">Seel All Job</button>
                 </div>
             </section>
 
