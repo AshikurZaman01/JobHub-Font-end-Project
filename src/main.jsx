@@ -10,10 +10,12 @@ import Home from './Components/Pages/Home/Home';
 import Statistics from './Components/Pages/Statistics/Statistics';
 import AppliedJobs from './Components/Pages/AppliedJobs/AppliedJobs';
 import Blog from './Components/Pages/Blog/Blog';
+import ErrorPage from './Components/Pages/ErrorPage/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path: "/",
+    errorElement: <ErrorPage></ErrorPage>,
     element: <Roots></Roots>,
     children: [
       {
