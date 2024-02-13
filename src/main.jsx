@@ -11,6 +11,8 @@ import Statistics from './Components/Pages/Statistics/Statistics';
 import AppliedJobs from './Components/Pages/AppliedJobs/AppliedJobs';
 import Blog from './Components/Pages/Blog/Blog';
 import ErrorPage from './Components/Pages/ErrorPage/ErrorPage';
+import JobDetails from './Components/FeaturesJob/JobDetails';
+import axios from 'axios';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,11 @@ const router = createBrowserRouter([
       {
         path: "/appliedJobs",
         element: <AppliedJobs></AppliedJobs>
+      },
+      {
+        path: "/jobDetails/:id",
+        loader: ({ params }) => fetch(`../public/jobs.json`),
+        element: <JobDetails></JobDetails>
       },
       {
         path: "/blog",

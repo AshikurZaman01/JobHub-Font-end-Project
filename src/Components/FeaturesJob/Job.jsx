@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
 
-    const { company_name, job_title, job_type, job_description, location, logo, remote_or_onsite, salary } = job || {};
+    console.log(job)
+
+    const { id, company_name, job_title, job_type, job_description, location, logo, remote_or_onsite, salary } = job || {};
 
     return (
         <div className=" shadow-sm shadow-gray-500 p-5 space-y-3 rounded">
@@ -23,7 +26,7 @@ const Job = ({ job }) => {
 
                     <span className="flex items-center gap-1"><img src="https://github.com/ProgrammingHero1/career-hub/blob/main/assets/icons/money.png?raw=true" alt="" />{salary}</span>
                 </div>
-                <button className="btn bg-purple-600 btn-md text-white">View Details</button>
+                <Link to={`/jobDetails/${id}`}><button className="btn bg-purple-600 btn-md text-white mt-2">View Details</button></Link>
             </div>
 
         </div>
