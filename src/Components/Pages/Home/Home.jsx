@@ -7,6 +7,7 @@ const Home = () => {
             <div className="w-10/12 mx-auto">
                 <Category></Category>
                 <FeaturesJob></FeaturesJob>
+
             </div>
         </div>
     );

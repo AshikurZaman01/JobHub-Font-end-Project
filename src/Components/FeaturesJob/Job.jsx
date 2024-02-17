@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
 
-    console.log(job)
 
     const { id, company_name, job_title, job_type, job_description, location, logo, remote_or_onsite, salary } = job || {};
 
