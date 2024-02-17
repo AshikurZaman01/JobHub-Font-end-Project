@@ -9,11 +9,10 @@ const AppliedJobs = () => {
     useEffect(() => {
 
         const storedJobId = getStoredJobApplication();
-        if (storedJobId.length > 0) {
-            const appliedJobs = data.filter(job => job.includes(storedJobId))
-        }
+        console.log(storedJobId);       
+                        
 
-    }, [])
+    }, [data])
 
 
 
