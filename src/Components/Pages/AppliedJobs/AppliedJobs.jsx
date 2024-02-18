@@ -1,26 +1,33 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../LocalStorage/LocalStorage";
+import StoredJobs from "./storedJobs";
 
 const AppliedJobs = () => {
 
+    const [storedJobId, setStoredJobId] = useState([]);
+    const jobsData = useLoaderData();
 
-    const data = useLoaderData();
     useEffect(() => {
 
         const storedJobId = getStoredJobApplication();
-        console.log(storedJobId);       
-                        
 
-    }, [data])
+        if (jobsData.length > 0) {
+            const storedJobIds = jobsData.filter(job => storedJobId.includes(job.id))
+            setStoredJobId(storedJobIds);
+        }
+
+    }, [jobsData])
 
 
 
     return (
         <div>
-            {
-                /* <h1>Applied Jobs</h1> */
-            }
+            <div className="grid grid-cols-1 gap-6 mb-10">
+                {
+                    storedJobId.map(job => <StoredJobs job={job} key={job.id}></StoredJobs>)
+                }
+            </div>
         </div>
     );
 };
