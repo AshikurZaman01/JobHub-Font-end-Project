@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -6,7 +6,7 @@ const Header = () => {
 
             <header className="flex justify-between items-center">
                 <div>
-                    <img src="https://github.com/ProgrammingHero1/career-hub/blob/main/assets/logo/CareerHub.png?raw=true" alt="" />
+                    <Link to={'/'}><img src="https://github.com/ProgrammingHero1/career-hub/blob/main/assets/logo/CareerHub.png?raw=true" alt="" /></Link>
                 </div>
 
                 <nav>
